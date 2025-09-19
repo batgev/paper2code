@@ -1,0 +1,76 @@
+# Paper2Code Configuration Template
+# Copy this file to config.yaml and customize as needed
+
+# Processing configuration
+processing:
+  mode: "comprehensive"  # "comprehensive" or "fast"
+  enable_repository_search: true
+  enable_code_indexing: true
+  parallel_agents: true
+  max_concurrent_agents: 3
+
+# Document segmentation
+document_segmentation:
+  enabled: true
+  size_threshold_chars: 50000
+  overlap_chars: 1000
+  max_segments: 10
+  min_segment_chars: 5000
+
+# LLM configuration
+llm:
+  preferred_provider: "anthropic"  # "openai" or "anthropic"
+  max_tokens: 8192
+  temperature: 0.3
+  openai:
+    default_model: "gpt-4"
+    backup_model: "gpt-3.5-turbo"
+  anthropic:
+    default_model: "claude-3-5-sonnet-20241022"
+    backup_model: "claude-3-haiku-20240307"
+
+# Output configuration
+output:
+  base_directory: "./output"
+  create_readme: true
+  include_analysis: true
+  include_references: true
+  code_format: "python"
+  generate_tests: true
+  generate_docs: true
+
+# Search configuration  
+search:
+  default_server: "github"
+  max_results: 10
+  timeout_seconds: 30
+
+# Cache configuration
+cache:
+  enabled: true
+  directory: "./cache"
+  ttl_seconds: 3600  # 1 hour
+  max_size_mb: 1000
+
+# Logging configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "./logs/paper2code.log"
+  console: true
+  max_bytes: 10485760  # 10MB
+  backup_count: 5
+
+# Performance configuration
+performance:
+  async_processing: true
+  batch_size: 10
+  timeout_seconds: 300  # 5 minutes per operation
+  memory_limit_mb: 2048
+
+# Security configuration
+security:
+  sandbox_code_execution: true
+  allowed_file_types: [".pdf", ".docx", ".doc", ".txt", ".md", ".html"]
+  max_file_size_mb: 50
+  validate_urls: true

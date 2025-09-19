@@ -1,0 +1,31 @@
+# Core dependencies for Paper2Code standalone
+aiofiles>=0.8.0
+aiohttp>=3.8.0
+asyncio-mqtt
+nest_asyncio
+
+# AI and Language Models
+anthropic>=0.15.0
+
+# Document processing
+PyPDF2>=2.0.0
+pymupdf>=1.24.0
+pdfplumber>=0.11.0
+docling>=1.0.0
+
+# Utilities
+pyyaml>=6.0
+pathlib2
+typing-extensions
+fastapi>=0.110
+uvicorn>=0.23
+
+# Interactive interfaces (optional)
+streamlit>=1.28.0           # For web interface
+ipywidgets>=8.0.0           # For Jupyter notebook interface
+
+# Development and testing (optional)
+pytest>=7.0.0
+pytest-asyncio
+black
+flake8
