@@ -2,8 +2,6 @@
 
 <div align="center">
 
-![Paper2Code Logo](docs/assets/logo.png)
-
 <h3>🧬 Transform Research Papers into Working Code</h3>
 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
@@ -374,7 +372,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🆘 **Support**
 
-- **📚 Documentation**: [docs/](docs/)
 - **🐛 Issues**: [GitHub Issues](https://github.com/h9-tec/paper2code/issues)
 - **💬 Discussions**: [GitHub Discussions](https://github.com/h9-tec/paper2code/discussions)
 - **📧 Email**: support@paper2code.dev
@@ -395,6 +392,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 *Accelerating scientific progress through automated paper reproduction*
 
-[**⭐ Star this repo**](https://github.com/h9-tec/paper2code) • [**📖 Read the docs**](docs/) • [**🚀 Try it now**](#installation)
+[**⭐ Star this repo**](https://github.com/h9-tec/paper2code) • [**🚀 Try it now**](#installation)
 
 </div>
